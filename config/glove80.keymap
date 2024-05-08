@@ -113,6 +113,28 @@
                 >;
             layer-id = <LAYER_Functions>;
         };
+        shavian1 {
+            bindings = <
+                  GOLD   GOLD   GOLD   GOLD   GOLD                                                            GOLD   GOLD   GOLD   GOLD   GOLD
+                ______   GOLD   GOLD   GOLD   GOLD   GOLD                                              GOLD   GOLD   GOLD   GOLD   GOLD   GOLD
+                ______   GOLD   GOLD   GOLD   GOLD   GOLD                                              GOLD   GOLD   GOLD   GOLD   GOLD ______
+                ______   GOLD   GOLD   GOLD   GOLD   GOLD                                              GOLD   GOLD   GOLD   GOLD   GOLD ______
+                ______   GOLD   GOLD   GOLD   GOLD   GOLD ______   GOLD ______  ______ ______ ______   GOLD   GOLD   GOLD   GOLD   GOLD ______
+                ______ ______ ______ ______ ______        ______ ______    RED  ______ ______ ______        ______ ______ ______ ______ ______
+                >;
+            layer-id = <LAYER_Shavian1>;
+        };
+        shavian2 {
+            bindings = <
+                ______ ______ ______ ______ ______                                                          ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______ ______                                            ______ ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______ ______                                            ______ ______ ______ ______ ______ ______
+                ______   GOLD   GOLD   GOLD   GOLD   GOLD                                              GOLD   GOLD   GOLD   GOLD   GOLD ______
+                ______ ______ ______ ______ ______ ______ ______ ______ ______  ______ ______ ______ ______ ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______        ______ ______    RED  ______ ______ ______        ______ ______ ______ ______ ______
+                >;
+            layer-id = <LAYER_Shavian2>;
+        };
         obs {
             bindings = <
                 ______ ______ ______ ______ ______                                                          ______ ______ ______ ______ ______
