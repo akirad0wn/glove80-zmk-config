@@ -52,6 +52,19 @@
 // a key in order to send its shifted version to the computer.
 #define AUTO_SHIFT_TERM 300 // AUTO_SHIFT_TERM + ALLOW_CROSSOVER_AFTER
 
+&mt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <KEY_REPEATING_TERM>;
+};
+
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <KEY_REPEATING_TERM>;
+};
+
+
 / {
     underglow-layer {
         compatible  = "zmk,underglow-layer";
