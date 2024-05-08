@@ -36,9 +36,21 @@
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
 #define LAYER_Lower 0
-#endif
+#endif 
 
 /* Custom Device-tree */
+// KEY_REPEATING_TERM defines how much time you have left (milliseconds)
+// after tapping a key to hold it again in order to make it auto-repeat.
+#define KEY_REPEATING_TERM 800 // "tap then hold" for key auto-repeat
+
+// TAPPING_TERM defines how long you need to hold (milliseconds)
+// mod keys in order to send their modifiers to the computer
+// (i.e. "register" them) for mod-click mouse usage (e.g. Ctrl-Click).
+#define TAPPING_TERM 370 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
+    
+// AUTO_SHIFT_TERM defines how long you need to hold (milliseconds)
+// a key in order to send its shifted version to the computer.
+#define AUTO_SHIFT_TERM 300 // AUTO_SHIFT_TERM + ALLOW_CROSSOVER_AFTER
 
 / {
     underglow-layer {
