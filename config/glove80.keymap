@@ -75,7 +75,7 @@
                 ______ ______ ______ ______ ______ ______                                              BLUE ______ ______ ______ ______   PINK
                 ______ ______ ______ ______ ______ ______                                              BLUE ______ ______ ______ ______   PINK
                 ______ ______ ______ ______ ______ ______                                              BLUE ______ ______ ______ ______   PINK
-                ______   PINK ______ YELLOW YELLOW ______ ______ ______ ______ ______  ______   PINK ______ ______ ______ ______ ______ ______
+                ______   PINK ______ YELLOW YELLOW ______ ______ ______ ______ ______  ______   PINK YELLOW ______ ______ ______ ______ ______
                 ______   PINK ______ YELLOW YELLOW        ______  GREEN ______  ______ ______ ______        ______ ______ ______ ______ ______
                 >;
             layer-id = <LAYER_Lower>;
@@ -480,6 +480,17 @@ macros {
             bindings
     = <&macro_tap &kp D &kp A &kp N &kp I &kp E &kp L &kp PERIOD &kp C &kp A &kp L &kp L>;
       };
+ interrobang: interrobang {
+             label = "interrobang";
+             compatible  = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+    = <&macro_press &kp LALT>
+    , <&macro_tap &kp KP_N8 &kp KP_N2 &kp KP_N5 &kp KP_N3>
+    , <&macro_release &kp LALT>;
+      };
 
 };
 };
@@ -514,7 +525,7 @@ macros {
                &trans         &none           &none           &none            &none   &kp HOME                                                      &email_address3   &none  &kp KP_SLASH  &kp KP_MULTIPLY        &trans  &kp PRINTSCREEN
                &trans         &none           &none    &kp UP_ARROW            &none    &kp END                                                       &email_address   &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_MINUS   &kp SCROLLLOCK
                &trans         &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                      &email_address2   &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS            &none
-               &trans     &kp K_APP           &none         &kp F11          &kp F12  &kp PG_DN  &trans  &trans  &trans  &trans  &trans  &caps_word        &kp COMMA   &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_ENTER           &trans
+               &trans     &kp K_APP           &none         &kp F11          &kp F12  &kp PG_DN  &trans  &trans  &trans  &trans  &trans  &caps_word     &interrobang   &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_ENTER           &trans
  &magic LAYER_Magic 0      &kp CAPS         &kp INS         &kp F11          &kp F12             &trans  &trans   &to 0  &trans  &trans      &trans                    &kp KP_N0     &kp KP_N0       &kp KP_DOT  &kp KP_EQUAL           &trans
             >;
         };
