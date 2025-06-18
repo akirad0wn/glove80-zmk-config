@@ -557,7 +557,7 @@ macros {
                &trans     &trans     &trans      &trans  &trans                                                                     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none   &none
                &trans     &trans     &trans      &trans  &trans  &trans                                                      &none       &none         &none         &none   &none   &none
                &trans     &trans     &trans      &trans  &trans  &trans                                                      &none    &kp HOME        &kp UP     &kp PG_UP   &none   &none
-               &trans  &kp LC(X)  &kp LC(C)   &kp LC(V)   &none  &trans                                                      &none    &kp LEFT      &kp DOWN     &kp RIGHT   &none   &none
+               &kp LC(A)  &kp LC(X)  &kp LC(C)   &kp LC(V)   &none  &trans                                                      &none    &kp LEFT      &kp DOWN     &kp RIGHT   &none   &none
                &trans  &kp K_APP     &trans      &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans   &none     &kp END      &kp DOWN     &kp PG_DN   &none  &trans
  &magic LAYER_Magic 0      &to 5  &lt 2 END  &lt 3 LEFT   &to 0          &kp LCTRL  &trans   &to 0  &trans  &trans  &trans               &none         &none         &none   &none  &trans
             >;
